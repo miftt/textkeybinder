@@ -39,9 +39,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: text-macro-keybinder-build
-          path: |
-            dist/TextMacroKeybinder.exe
-            dist/TextMacroKeybinder_Folder/**
+          path: dist/**
 
   release:
     needs: build-windows
@@ -53,7 +51,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: text-macro-keybinder-build
-          path: dist
+          path: .
 
       - name: Create GitHub Release
         id: create_release
