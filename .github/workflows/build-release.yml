@@ -29,7 +29,11 @@ jobs:
 
       - name: Build exe with PyInstaller
         run: |
-          pyinstaller TextMacroKeybinder.spec
+          if (Test-Path "TextMacroKeybinder.spec") {
+            pyinstaller TextMacroKeybinder.spec
+          } else {
+            pyinstaller --name TextMacroKeybinder --noconsole main.py
+          }
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4

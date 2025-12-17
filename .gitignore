@@ -23,8 +23,7 @@ dist/
 *.egg
 *.log
 
-# PyInstaller
-*.spec
+# PyInstaller artifacts
 *.manifest
 *.dll
 *.exe
