@@ -73,7 +73,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: dist/TextMacroKeybinder.exe
+          asset_path: TextMacroKeybinder.exe
           asset_name: TextMacroKeybinder-${{ github.ref_name }}.exe
           asset_content_type: application/octet-stream
 
