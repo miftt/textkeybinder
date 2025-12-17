@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE/editor
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python packaging / build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+*.log
+
+# PyInstaller
+*.spec
+*.manifest
+*.dll
+*.exe
+
+# Local config / runtime files
+keybinds.json
+
+
